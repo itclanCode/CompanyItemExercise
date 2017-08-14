@@ -1,0 +1,255 @@
+/*
+* 发票信息样式
+*
+* 
+*/
+
+@charset "utf-8";
+body{
+	background:#F6F6F6;
+}
+/*头部信息开始*/
+header{
+	text-align:center;
+	position:relative;
+	font-size:0.48rem;
+	color:#050505;
+	line-height:2.266667rem;
+	background:#fff;
+}
+header .go-back{
+   position:absolute;
+   left:0.8rem;
+   top:0.666667rem;
+   width:0.586667rem;
+   height:1.013333rem;
+   background:url("../img/back@2x.png") no-repeat 0 0;
+   background-size:100%;
+}
+header:after{
+	display:block;
+	content:"";
+	width:100%;
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+/*头部结束*/
+/*发票类型开始*/
+.invoice-type {
+	 background:#fff;
+	 font-size:0.373333rem;
+}
+/*发票类型,发票抬头,发票内容标题公共样式开始*/
+.invoice-Common-style{
+	padding:1.013333rem 0.0rem 0.746667rem 0.8rem ;
+}
+/*发票类型,发票抬头,发票内容标题公共样式结束*/
+.invoice-type p:nth-of-type(2){
+    padding-bottom:0.533333rem;
+}
+.invoice-type p:nth-of-type(3){
+	display:none;
+	margin:0 0.826667rem 0.613333rem 0.826667rem;
+	font-size:0.373333rem;
+	color:#FA9451;
+	background:#FEEADC;
+	padding:0.693333rem 0.8rem;
+	line-height:1.013333rem;
+}
+.invoice-type p span.com-invoice{
+	/*display:inline-block;*/
+	padding:0.453333rem 0.613333rem;
+	width:7.066667rem;
+	height:1.6rem;
+	text-align:center;
+	border:0.026667rem solid #333;
+	transform:scale(0.5);
+	border-radius:0.053333rem;
+	text-align:center;
+	line-height:1.6rem;
+	margin-bottom:0.533333rem;
+}
+.invoice-type p span:nth-of-type(1){
+	margin-left:0.8rem;
+}
+.invoice-type p span.active{
+	color:#d7000f;
+	border-color:#d7000f;
+}
+.invoice-type p span:nth-of-type(2){
+	margin-left:1.066667rem;
+}
+.invoice-type:after{
+	display:block;
+	content:"";
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+/*发票类型结束*/
+
+/*发票抬头开始*/
+.invoice-taiTou{
+	background:#fff;
+	font-size:0.373333rem;
+	/*margin:0.533333rem 0 0.8rem 0;*/
+	margin-top:0.533333rem;
+	/*padding-bottom:0.8rem;*/
+	/*padding-left:0.8rem;*/
+}
+.invoice-taiTou:before{
+	content:"";
+	display:block;
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+/*圆圈距离左边距离30px开始*/
+.invoice-marL-30{
+	padding-left:0.8rem;
+}
+/*圆圈距离左边距离30px结束*/
+.invoice-taiTou p:nth-of-type(2){
+	font-size:0.346667rem;
+	line-height:0rem;
+	padding-bottom:0.533333rem;
+}
+.invoice-taiTou p i.person{
+	margin-left:0rem;
+}
+.invoice-taiTou p i.unit{
+	/*margin-left:0.453333rem;*/
+}
+/*圆圈公共样式开始*/
+.circleW-32{
+
+}
+/*圆圈公共样式结束*/
+i.com-circle:after{
+	display:inline-block;
+	content:" ";
+	width:0.426667rem;
+	height:0.426667rem;
+	background:url("../img/Oval Copy@2x.png") no-repeat center center;
+	background-size:cover;
+	vertical-align: middle;
+}
+/*圆圈活动开始*/
+.circle-active{
+	display:inline-block;
+	width:0.426667rem;
+	height:0.426667rem;
+    background:url("../img/xuanzhong@2x.png") no-repeat center center;
+	background-size:contain; /*用rem做单位时,做背景图时,会显示不全,用contain*/
+	vertical-align:middle;
+}
+/*圆圈活动结束*/
+/*圆圈,个人,明细公共样式开始*/
+.invoice-marLf-20{
+   margin-left:0.266667rem;
+}
+/*圆圈,个人,明细公共样式结束*/
+.invoice-taiTou:after{
+	display:block;
+	content:"";
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+/*发票抬头结束*/
+/*点击单位表单开始*/
+.unit-info{
+	display:none;
+}
+.unit-info p{
+	padding:0 0.8rem 0.533333rem 0.8rem;
+}
+.unit-info input.txt{
+	font-size:0.666667rem;
+	text-indent:0.533333rem;
+	color:#3b3b3b;
+	width:100%;
+	height:2.133333rem;
+	border-radius:3px;
+	outline:none;
+	border:none;/*当给表单加圆角后,会有内阴影,去掉边框可解决*/
+	background:#f6f6f6;
+}
+/*点击单位表单结束*/
+/*点击增值税专用发票表单开始*/
+.specical-form:after{
+	display:block;
+	content:"";
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+.specical-form{
+	display:none;
+	font-size:0.666667rem;
+	padding:0.533333rem 0.0rem 0.0rem 0.0rem;
+	background:#fff;
+}
+.specical-form form p{
+	padding-bottom:0.533333rem;
+}
+.color-red{
+	color:#d7000f;
+}
+.specical-form form p input.txt{
+	width:12.933333rem;
+	height:2.133333rem;
+	margin-left:0.933333rem;
+	outline:none;
+	text-indent:0.533333rem;
+	background:#f6f6f6;
+	border:none;
+	border-radius:0.08rem;
+}
+.specical-form form p span.margin-Left-80{
+	margin-left:2.133333rem;
+}
+.specical-form form p span.ident-number{
+	margin-left:0.8rem;
+}
+.specical-form form p span.bank-account-number{
+	margin-left:1.546667rem;
+}
+/*点击增值税专用发票表单结束*/
+/*发票内容开始*/
+.invoice-content:before{
+	display:block;
+	content:"";
+	height:0.026667rem;
+	background:#dcdcdc;
+	transform:scaleY(0.5);
+}
+.invoice-content{
+	background:#fff;
+	font-size:0.373333rem;
+	margin-top:0.533333rem;
+}
+.invoice-content p i.no-open-invoice{
+	/*margin-left:0.533333rem;*/
+}
+/*发票内容结束*/
+
+/*确定按钮开始*/
+.sure{
+	position:relative;
+	left:0.0rem;
+	bottom:-10rem;
+	width:100%;
+	height:2.533333rem;
+	background:#d7000f;
+	text-align:center;
+	line-height:2.533333rem;
+}
+.sure a{
+	font-size:0.853333rem;
+	color:#fff;
+	display:block;
+}
+
+/*确定按钮结束

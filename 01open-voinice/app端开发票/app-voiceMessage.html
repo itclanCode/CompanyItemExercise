@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+	<!-- 内容样式 -->
+	<link rel="stylesheet" type="text/css" href="css/app-invoice-information.css">
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+		<!-- 头部信息开始 -->
+		<header>
+			   <div><a href="javascript:;" class="go-back"></a><span>发票信息</span></div>
+			   <div class="border"></div>
+		</header>
+		<!-- 头部信息结束 -->
+		<!-- 发票类型开始 -->
+		<div class="invoice-select">
+			 <p class="voice-type-p"><span class="fontF-28-color">发票类型</span></p>
+			 <p id="select-tab" class="voice-left"><span class="common-invoice-page common-invoice-active w264" id="common-invoice-page">普通发票(纸质版)</span><span class="vat-Invoice w228 vat-active">增值税专用发票</span></p>
+			 <div class="tips" id="tips">
+			 	<p>*温馨提示：开增值税发票前建议您跟商户先沟通，以防产生纠纷。我公司依法开具发票，如您购买的商品按税法规定属于不得从增值税销项税额中抵扣的项目（例如集体福利或个人消费等），请您选择普通发票。</p>
+			 </div>
+			 <!-- 1像素边框 -->
+			 <div class="border"></div>
+		</div>
+		<!-- 发票类型结束 -->
+		<!-- 普通发票表单选项开始 -->
+		<div class="invoice-taitou" id="invoice-taitou">
+			<div class="border-before"></div>
+			<p class="invoice-taitou-p"><span class="fontF-28-color">发票抬头</span></p>
+			<form action="" id="common-form" class="common-form">
+				<p class="ico" id="ico-com"><i class="person-ico first-icon icon-active"></i><span class="person fontF-26-color">个人</span><i class="unit-ico second-icon"></i><span class="unit inBlock-middle">单位</span></p>
+				<div class="unit-input-con" id="unit-input-con">
+				     <p><input type="text" class="txt unit-name-txt" placeholder="请输入单位名称"  name=""></p> 
+					 <p><input type="text" class="txt taxpayer-Number-txt" placeholder="请输入15或18位纳税人识别号" name=""></p> 
+				</div>
+				<div class="border"></div>
+				<!-- 发票内容开始 -->
+				<div class="invoice-content">
+					<div class="border-before"></div>
+					<p class="invoice-content-p"><span class="fontF-28-color">发票内容</span></p>
+					<p class="ico" id="ico-voicon"><i class="detail-ico first-icon icon-active"></i><span class="detail fontF-26-color">明细</span><i class="no-open-voico-ico second-icon"></i><span class="no-open-voice inBlock-middle">不开发票</span></p>
+				</div>
+				<!-- 发票内容结束 -->
+				<p class="common-sure-p"><input type="submit" class="sure-btn" value="确定" name=""></p>
+			</form>
+			
+
+		</div>
+		<!-- 普通发票表单选项结束 -->
+		<!-- 增值税专用发票开始 -->
+		<div class="vat-special-invoice" id="vat-special-invoice">
+			 <div class="border-before"></div>
+			 <form action="" method="">
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="unit-name ml-80">单位名称：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入单位名称"></p>
+			       </div>
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="Tax-ident-Number ml-80">纳税人识别号：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入15或18位纳税人识别号"></p>
+			       </div>
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="register-address ml-80">注册地址：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入注册地址"></p>
+			       </div>
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="register-Num ml-80">注册电话：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入注册地址"></p>
+			       </div>
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="register-Num ml-80">开户银行：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入开户银行"></p>
+			       </div>
+			       <div class="form-box">
+			       	     <p class="flex-left"><span class="Bank-account-number ml-55">开户行账号：</span></p>
+			       	     <p class="flex-right"><input class="txt" type="text" name="" placeholder="请输入开户账号"></p>
+			     		
+			       </div>
+			       <div class="border"></div>
+			      
+			 </form>
+			 <div class="vat-special-content" id="vat-special-content">
+						    <div class="border-before"></div>
+						    <p class="invoice-content-p"><span class="fontF-28-color">发票内容</span></p>
+						    <p class="ico" id="vat-spec-icon"><i class="detail-ico first-icon"></i><span class="detail fontF-26-color">明细</span><i class="no-open-voico-ico second-icon"></i><span class="no-open-voice inBlock-middle">不开发票</span></p>
+		     </div>
+			 <div class="vat-sure-btn"><input type="button" class="sureBtn" value="确定" name=""></div>
+			
+		</div>
+		<!-- 增值税专用发票结束 -->
+		<!-- 引入外部js -->
+		<script type="text/javascript" src="js/Mobile_adaptation.js"></script>
+		<script type="text/javascript" src="js/app-invoice-information.js"></script>
+		<script type="text/javascript" src="js/zepto.min.js"></script>
+		
+
+</body>
+</html>
