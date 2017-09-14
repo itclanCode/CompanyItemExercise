@@ -1,0 +1,342 @@
+/**
+* app发票信息样式
+* 
+* @author:wangzhenchuan;
+* 
+*/
+
+@charset "utf-8";
+/*引入苹方字体*/
+@font-face{
+	font-family:"PingFangSC-Regular";
+	src:url("PingFang SC Regular.ttf");
+}
+/*一像素边框公共样式开始*/
+body{
+	background: #F6F6F6;
+}
+.border{
+    height:1px;
+    background:#DCDCDC ;
+    -webkit-transform:scaleY(0.5);
+    -webkit-transform-origin:0 0;
+    overflow:hidden;  
+}
+.border::after{
+    content:'';
+    width:100%;
+    border-bottom:1px solid #DCDCDC ;
+    transform:scaleY(0.5);
+}
+.border-before{
+	height:1px;
+    background:#DCDCDC;
+    -webkit-transform:scaleY(0.5);
+    -webkit-transform-origin:0 0;
+    overflow:hidden; 
+}
+.border::before{
+    content:'';
+    width:100%;
+    border-top:1px solid #DCDCDC;
+    transform:scaleY(0.5);
+}
+/*一像素边框公共样式结束*/
+/*头部信息开始*/
+header{
+	height:0.88rem;
+	line-height:0.88rem;
+	height:0.88rem;
+	line-height:0.88rem;
+	background:#fff;
+	text-align:center;
+}
+header a.go-back{
+	float:left;
+	width:0.368rem;
+	height:0.368rem;
+	margin:0.266rem -1rem 0.246rem 0.346rem;
+	background:url("../img/back@2x.png") no-repeat 0 0;
+	background-size:contain;
+}
+header span{
+	font-family: "PingFangSC-Regular";
+	font-size:0.36rem;
+	color:#333;
+}
+/*头部信息结束*/
+/*发票类型开始*/
+.invoice-select{
+	background:#fff;
+	margin:0 0 0.2rem 0;
+}
+.invoice-select p.voice-type-p{
+	padding:0.32rem 0px 0.2rem 0.3rem;
+}
+.fontF-28-color{
+	font-family:"PingFangSC-Regular";
+	font-size: 0.28rem;
+	color: #333;
+}
+.invoice-select p:nth-of-type(2){
+	padding:0.0rem 0.0rem 0.2rem 0.3rem;
+}
+.invoice-select p:nth-of-type(2) span.common-invoice-page{
+	display:inline-block;
+	width:2.64rem;
+	height:0.6rem;
+	text-align:center;
+	line-height:0.6rem;
+	border:0.01rem solid #333;
+	border-radius: 0.04rem;
+	margin:0 0.4rem 0 0;
+}
+.w264{
+	display:inline-block;
+	width:2.64rem;
+	height:0.6rem;
+	text-align:center;
+	line-height:0.6rem;
+	margin:0 0.4rem 0 0;
+	border:0.01rem solid #333;
+	/*color:#D7000F;*/
+}
+.w228{
+	display:inline-block;
+	width:2.28rem;
+	height:0.6rem;
+	text-align:center;
+	line-height:0.6rem;
+	border:0.01rem solid #333;
+	border-radius:0.04rem;
+}
+.vat-active{
+	display:inline-block;
+	width:2.28rem;
+	height:0.6rem;
+	text-align:center;
+	line-height:0.6rem;
+	border:0.01rem solid #D7000F;
+	color:#D7000F;
+}
+.invoice-select p.voice-left span.common-invoice-active{
+	display:inline-block;
+	border:0.01rem solid #D7000F;
+	border-radius:0.04rem;
+	color:#D7000F;	
+}
+.invoice-select p.voice-left span.vat-Invoice{
+	display:inline-block;
+	width:2.28rem;
+	height:0.6rem;
+	text-align:center;
+	line-height:0.6rem;
+	border:0.01rem solid #333;
+	border-radius:0.04rem;
+	color:#333;
+
+}
+.vat-active{
+	display:inline-block;
+	text-align:center;
+	line-height:0.6rem;
+	border-radius: 0.04rem;
+	margin:0 0.4rem 0 0;
+	border:0.01rem solid #D7000F;
+	/*color:#D7000F;*/
+}
+/*发票类型结束*/
+.invoice-taitou{
+	background:#fff;
+	display:block;
+	margin:0 0 0.2rem 0;
+}
+.invoice-taitou p.invoice-taitou-p{
+	padding:0.32rem 0px 0.18rem 0.3rem;
+}
+.invoice-taitou  .common-form{
+	background:#F6F6F6;
+}
+.invoice-taitou  .common-form p.ico{
+	background:#fff;
+	padding:0 0 0.2rem 0.3rem;
+}
+.icon-active{
+	display:inline-block;
+	width:0.32rem;
+	height:0.32rem;
+	background:url(../img/xuanzhong@2x.png) no-repeat 0 0;
+	background-size:100%;
+	margin-right:0.2rem;
+	vertical-align:middle;
+}
+.fontF-26-color{
+	display:inline-block;
+	vertical-align:middle;
+	font-size:0.26rem;
+	font-family:"PingFangSC-Regular";
+	color:#333;
+	margin-right:0.34rem;
+}
+.second-icon{
+	display:inline-block;
+	width:0.3rem;
+	height:0.3rem;
+	background:url(../img/weixuanzhong.png) no-repeat 0 0;
+	background-size:100%;
+	vertical-align:middle;
+	margin-right:0.2rem;
+}
+.inBlock-middle{
+	display:inline-block;
+	vertical-align:middle;
+}
+.invoice-taitou  .common-form .unit-input-con{
+	background:#fff;
+	display:none;
+	padding:0.0rem 0.3rem 0.3rem 0.3rem;
+}
+.invoice-taitou  .common-form .unit-input-con input.txt{
+	width:100%;
+	height:0.8rem;
+	background: #F6F6F6;
+	border-radius:2px;
+	text-indent:0.2rem;
+	font-family:"PingFangSC-Regular";
+	font-size: 0.28rem;
+	color: #999;
+}
+.invoice-taitou  .common-form .unit-input-con input.unit-name-txt{
+	margin-bottom:0.2rem;
+}
+/*发票内容开始*/
+.invoice-content{
+	background:#F6F6F6;
+	padding:0.2rem 0.0rem 0.3rem 0rem;
+}
+.invoice-content p.invoice-content-p{
+	background:#fff;
+	padding:0.31rem 0 0.18rem 0.3rem;
+}
+i.detail-ico{
+	display:inline-block;
+	width:0.32rem;
+	height:0.32rem;
+	background:url(../img/xuanzhong@2x.png) no-repeat 0 0;
+	background-size:100%;
+	margin-right:0.2rem;
+	vertical-align:middle;
+} 
+.invoice-content{
+	margin-bottom:4.06rem;
+}
+.invoice-content p.ico span.no-open-voice{
+	display:inline-block;
+	vertical-align:middle;
+}
+/*发票内容结束*/
+/*确定按钮开始*/
+.common-sure-p input.sure-btn{
+	font-size:0.32rem;
+	color:#fff;
+	width:100%;
+	height:0.98rem;
+	background:#D7000F;
+	position:fixed;  /*固定定位*/
+	left:0;
+	bottom:0;
+}
+/*确定按钮结束*/
+/*增值税专用发票下温馨提示开始*/
+.tips{
+	display:none;
+	padding:0 0.3rem 0.2rem 0.3rem;
+}
+.tips p{
+	background: rgba(250,148,81,0.20);
+	font-family:"PingFangSC-Regular";
+	font-size:0.2rem;
+	color:#FA9451;
+	line-height:0.3rem;
+	padding:0.2rem;
+}
+/*增值税专用发票下温馨提示结束*/
+/*增值税专用发票内容开始*/
+.vat-special-invoice{
+	display:none;
+}
+.vat-special-invoice form{
+	background:#fff;
+	padding-top:0.22rem;
+
+}
+.vat-special-invoice .form-box{
+	display:-webkit-box;
+	-webkit-box-orient:horizontal;
+	margin-right:0.3rem;
+}
+.vat-special-invoice .form-box p.flex-left{
+	width:2.252rem;
+	height:0.8rem;
+	line-height:0.8rem;
+	padding-bottom:0.2rem;
+}
+.vat-special-invoice .form-box p.flex-left span.ml-80{
+	margin-left:0.80rem;
+	font-family:"PingFangSC-Regular";
+	font-size:0.26rem;
+	color:#151515;
+}
+.vat-special-invoice .form-box p.flex-left span.ml-55{
+	margin-left:0.55rem;
+	font-family:"PingFangSC-Regular";
+	font-size:0.26rem;
+	color:#151515;
+}
+.vat-special-invoice .form-box p.flex-left span::before{
+	content:"*";
+	color:#D7000F;
+}
+.vat-special-invoice .form-box p.flex-left span.Tax-ident-Number{
+	margin-left:0.3rem;
+	font-family:"PingFangSC-Regular";
+	font-size:0.26rem;
+	color:#151515;
+}
+.vat-special-invoice .form-box p.flex-right{
+	-webkit-box-flex:1;
+	box-flex:1;
+}
+.vat-special-invoice .form-box p.flex-right input.txt{
+	width:100%;
+	height:0.8rem;
+	background: #F6F6F6;
+	border-radius:0.04rem;
+	text-indent:0.2rem;
+	font-size:0.28rem;
+	color:#999;
+	font-family:"PingFangSC-Regular";
+}
+.vat-special-invoice .vat-special-content{
+	margin-top:0.2rem;
+	margin-bottom:2.96rem;
+}
+.vat-special-invoice .vat-special-content .invoice-content-p{
+	background:#fff;
+	padding:0.31rem 0 0.18rem 0.3rem;
+}
+.vat-special-invoice .vat-special-content p.ico{
+	background:#fff;
+	padding:0 0 0.2rem 0.3rem;
+}
+.vat-special-invoice .vat-sure-btn input.sureBtn{
+	font-size:0.32rem;
+	width:100%;
+	height:0.98rem;
+	background:#D7000F;
+	color:#fff;
+	position:fixed;
+	bottom:0;
+	left:0;
+}
+/*增值税专用发票内容结束*/

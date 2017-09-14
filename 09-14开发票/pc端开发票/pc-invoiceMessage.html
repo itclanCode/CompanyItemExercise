@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" type="text/css" href="css/pc-invoiceMessage.css">
+	<!-- 重置样式 -->
+	<link rel="stylesheet" type="text/css" href="css/reset.css">
+</head>
+<body>
+	    <div class="mask"></div>
+		<div class="pop-window">
+				<!-- 头部信息开始 -->
+				<header>
+					    <span>发票信息</span>
+					    <i class="close"></i>
+				</header>
+				<!-- 头部信息结束 -->
+				<!-- 普通发票(纸质)与增值税专用发票切换按钮开始 -->
+				<div class="message-con">
+					  <p class="invoice-select"><a href="javascript:;" class="common-invoic-page active">普通发票(纸质)</a><a href="javascript:;" class="vat-invoice border-gray-line">增值税专用发票</a></p>
+					  <!-- 普通发票(纸质)部分开始 -->
+					  <div class="common-voice-part">
+					  	     <form id="new-unit-voice" class="new-unit-voice" action="#" method="post">
+					  	     	   <span class="voice-taitou">发票抬头:</span>
+					  	     	   <div class="newList-voice">
+					  	     		  <p id="person-p" class="nextVoiceP"><input class="newList-txt  newList-txt-active" value="个人" readonly="readonly"></p>
+					  	     		</div>
+					  	     		<p><a href="javascript:;" class="add-invoice">新增单位发票</a></p>
+					  	     	    <p class="tax-number-p"><span class="taxpayerInumber">纳税人识别号:</span> <input type="text" class="tax-txt" name="taxpayerInumber" placeholder="请输入15位或18位纳税人识别号">
+					  	     	    <span class="taxpayNum">*请输入15或18位纳税人识别号</span>
+					  	     	    </p>
+					  	     </form>
+					  	     <p class="common-voice-p"><span class="invoice-con">发票内容:</span><a href="javascript:;" class="no-open-voice voice-com-btn active-invoice">不开发票</a><a href="javascript:;" class="detail voice-com-btn">明细</a></p>
+					  	     <p>
+					  	     	 <a href="javascript:;" class="sure com-btn">确定</a>
+					  	     	 <a href="javascript:;" class="cancel com-btn">取消</a>
+					  	     </p>
+					  </div>
+					  <!-- 普通发票(纸质)部分结束 -->
+					  <!-- 点击增值税专用发票按钮开始 -->
+					  <div class="special-Vat-Invoice-part">
+					  	    <p class="reminder">*温馨提示：开增值税发票前建议您跟商户先沟通，以防产生纠纷。我公司依法开具发票，如您购买的商品按税法规定属于不得从增值税销项税额中抵扣的项目（例如集体福利或个人消费等），请您选择普通发票。</p>
+					  	    <form action="" method="" id="special-Vat-form">
+					  	    	  <p><span class="mL-81">单位名称:</span><input type="text" class="txt txtUnit" name="companyName" autocomplete="off" placeholder="请输入单位名称">
+					  	    	  <span class="error-unit-name">*请输入单位名称</span>
+					  	    	  </p>
+					  	    	  <p><span class="ml-53">纳税人识别号:</span><input type="text" class="txt txtIndent" name="taxIdentNumber" placeholder="请输入15或18位纳税人识别号" autocomplete="off" maxlength="18">
+					  	    	  <span class="error-taxindent-number">*请输入15或18位纳税人识别号</span>
+					  	    	  </p>
+					  	    	  <p><span class="mL-81">注册地址:</span><input type="text" class="txt txtAddress" name="registerAddress" autocomplete="off" placeholder="请输入注册地址">
+					  	    	  <span class="error-register-address">*请输入注册地址</span>
+					  	    	  </p>
+					  	    	  <p><span class="mL-81">注册电话:</span><input type="text" class="txt txtNumber" name="regNumber" autocomplete="off" placeholder="请输入注册电话">
+					  	    	  	<span class="error-register-num">*请输入注册电话</span>
+					  	    	  </p>
+					  	    	  <p><span class="mL-81">开户银行:</span><input type="text" class="txt txtBack" name="bank" autocomplete="off" placeholder="请输入开户银行">
+					  	    	  <span class="error-open-back">*请输入开户银行</span>
+					  	    	  </p>
+					  	    	  <p><span class="ml-65">开户行账号:</span><input type="text" class="txt  txtAccount" name="creditcard" autocomplete="off" placeholder="请输入开户行账号">
+					  	    	  <span class="error-back-account">*请输入开户行账号</span>
+					  	    	  </p>
+					  	    	  <p class="voice-con"><span class="voice-content">发票内容:</span><a href="javascript:;" class="no-open-voice  voice-con-active">不开发票</a><a href="javascript:;" class="detail">明细</a></p>
+					  	    	  <p><input type="button" class="sure specical-form-btn-com" value="确定" name="" autocomplete="off"><input type="button" class="cancel specical-form-btn-com" value="取消" name="" autocomplete="off"></p>
+					  	    </form>
+					  </div>
+					  <!-- 点击增值税专用发票按钮结束 -->
+				</div>
+				<!-- 普通发票(纸质)与增值税专用发票切换按钮结束 -->
+				
+		</div>
+		<script type="text/javascript" src="js/jquery.js"></script>
+		<script type="text/javascript" src="js/jquery.validate.js"></script>
+		<script type="text/javascript" src="js/pc-invoiceMessage.js"></script>
+</body>
+</html>
